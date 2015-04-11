@@ -20,15 +20,23 @@ GRZEGORZPAWLIK.Developer.Seed.contact = {
 };
 
 GRZEGORZPAWLIK.Developer.Seed.projects = {
-    "recentProjects": {
-
+    "recentProjects": {        
+        "Wilson (Management Platform for FB Apps)": "http://localhost/showcase/project/wilson",
+        "Domingo (Travel Inspiration Site)": "http://letsdomingo.com",
+        "eDreams Blog (Template redesign)": "http://blog.edreams.com",
+        "eDreams Hotels Landing Pages (Template redesign)" : "",
+        "Follow Travel (Twitter contest)" : "http://blog.edreams.es/follow-travel/",        
+        "eDreams Prize Alerts (FB App)": "https://www.facebook.com/eDreams/app_846536198741959",
+        "Dear Christmas (FB App)": "http://apps-odigeo.com/apps/dearchristmas/",        
+        "Dont Pay Me (Personal)": "http://dontpayme.com",
+        "* GIFs are forever (Images)": "http://localhost/showcase/project/gifs-are-forever"      
     }
-}
+};
 
 GRZEGORZPAWLIK.Developer.Seed.tech = {
-    "HTML/CSS/JavaScript": ["Grunt", "Compass", "Sass & Less", "jQuery", "Backbone.js", "Templates: Mustache, Handlebars, Jade", "Bookmarklets", "Social media integration", "AngularJS", "Bootstrap"],
-    "PHP": ["WordPress", "CodeIgniter", "Drupal", "Joomla", "Laravel"]
-}
+    "HTML/CSS/JavaScript": ["Grunt", "Compass", "Sass & Less", "jQuery", "Templates: Mustache, Handlebars, Jade", "Responsive design", "Social media integration", "AngularJS", "Bootstrap"],
+    "PHP": ["WordPress", "CodeIgniter", "Drupal", "Joomla", "Zend", "Laravel"]
+};
 
 GRZEGORZPAWLIK.Developer.Seed.refs = {
     "professional": [{
@@ -68,25 +76,25 @@ GRZEGORZPAWLIK.Developer.Seed.xp = {
     "professional": [{
         "role": "Social Media App Developer",
         "company": "eDreams Odigeo",
-        "description": "",
+        "description": "Front and backend development on the variety of projects within the Marketing department.",
         "date": "05/2012-now",
         "clients": ["eDreams", "Opodo", "GoVoyages", "Travellink", "Liligo"]
     }, {
         "role": "Full-Stack Developer",
         "company": "BlueBirdMedia",
-        "description": "",
+        "description": "Wide range of sites & apps from small micro-sites contests to CMS solutions",
         "date": "07/2011-05/2012",
         "clients": ["Mainly small and medium dutch-based companies"]
     }, {
         "role": "Full-Stack Developer",
         "company": "Internet Advantage",
-        "description": "",
+        "description": "Development and optimization of clients sites and marketing campaigns.",
         "date": "01/2011-08/2011",
-        "clients": ["DonQ", "Sonic Drive-In", "Ford"]
+        "clients": ["TECS", "PsychCorp", "ADT", "Turismo Madrid", "Bayer"]
     }, {
         "role": "Back-End Developer",
         "company": "Web Koncept Studio",
-        "description": "",
+        "description": "Support with web development and debugging, email marketing campaigns development.",
         "date": "09/2008-11/2009"
     }]
 };
@@ -135,7 +143,7 @@ GRZEGORZPAWLIK.Developer.Resume = function(seed) {
                     str += item;
                     str += '</a>';
                 } else {
-                    str += contactInfo[item]
+                    str += contactInfo[item];
                 }
                 str += '</p>';
                 str += '</div>';
@@ -147,8 +155,7 @@ GRZEGORZPAWLIK.Developer.Resume = function(seed) {
 
         _addTechnologies: function() {
             var techs = _seed.tech,
-                item, feature, str = '',
-                i = 0;
+                str = '';
 
             str += '<div class="gp-module gp-professional-technologies">';
             str += this._createTitle('Technology');
@@ -164,7 +171,7 @@ GRZEGORZPAWLIK.Developer.Resume = function(seed) {
         _addExperience: function() {
             var xp = _seed.xp.professional,
                 xpLen = xp.length,
-                item, str = '',
+                str = '',
                 i = 0;
 
             str += '<div class="gp-module gp-experience">';
