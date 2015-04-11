@@ -21,15 +21,15 @@ GRZEGORZPAWLIK.Developer.Seed.contact = {
 
 GRZEGORZPAWLIK.Developer.Seed.projects = {
     "recentProjects": {        
-        "Wilson (Management Platform for FB Apps)": "http://localhost/showcase/project/wilson",
+        "Wilson (Management Platform for FB Apps)": "http://showcase.gpawlik.com/project/wilson",
         "Domingo (Travel Inspiration Site)": "http://letsdomingo.com",
-        "eDreams Blog (Template redesign)": "http://blog.edreams.com",
-        "eDreams Hotels Landing Pages (Template redesign)" : "",
-        "Follow Travel (Twitter contest)" : "http://blog.edreams.es/follow-travel/",        
         "eDreams Prize Alerts (FB App)": "https://www.facebook.com/eDreams/app_846536198741959",
+        "eDreams Blog (Template redesign)": "http://blog.edreams.com",
+        "eDreams Hotels Landing Pages (Template redesign)" : "http://www.edreams.es/engine/campaigns/dynpack/?cityName=paris-test",
+        "Follow Travel (Twitter contest)" : "http://blog.edreams.es/follow-travel/",                
         "Dear Christmas (FB App)": "http://apps-odigeo.com/apps/dearchristmas/",        
         "Dont Pay Me (Personal)": "http://dontpayme.com",
-        "* GIFs are forever (Images)": "http://localhost/showcase/project/gifs-are-forever"      
+        "* GIFs are forever (Images)": "http://showcase.gpawlik.com/project/gifs-are-forever/"      
     }
 };
 
@@ -176,7 +176,7 @@ GRZEGORZPAWLIK.Developer.Resume = function(seed) {
 
             str += '<div class="gp-module gp-experience">';
             str += this._createTitle('Experience');
-            str += '<ul>';
+            str += '<ul class="gp-list">';
             for (i = 0; i < xpLen; i++) {
                 str += '<li>';
                 str += '<h3>' + xp[i].role + '</h3>';
@@ -220,7 +220,7 @@ GRZEGORZPAWLIK.Developer.Resume = function(seed) {
 
             str += '<div class="gp-module gp-education">';
             str += this._createTitle('Education');            
-            str += '<ul>';
+            str += '<ul class="gp-list">';
             for (i = 0; i < eduLen; i++) {
                 str += '<li>';
                 for (item in edu[i]) {
@@ -240,7 +240,7 @@ GRZEGORZPAWLIK.Developer.Resume = function(seed) {
 
             str += '<div class="gp-module gp-recentProjects">';
             str += this._createTitle('Featured Projects');
-            str += '<ul>';
+            str += '<ul class="gp-list">';
             for (item in recentProjects) {
                 str += '<li><a href="' + recentProjects[item] + '" target="_blank">' + item + '</a></li>';
             }
@@ -256,7 +256,7 @@ GRZEGORZPAWLIK.Developer.Resume = function(seed) {
         _addList: function(collection) {
             var item, str = '';
             if (collection) collection.sort();
-            str += '<ul>';
+            str += '<ul class="gp-list">';
             for (item in collection) {
                 str += '<li>' + collection[item] + '</li>';
             }
