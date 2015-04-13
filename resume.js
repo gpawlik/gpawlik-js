@@ -11,12 +11,10 @@ GRZEGORZPAWLIK.Developer.Seed.titles = {
 GRZEGORZPAWLIK.Developer.Seed.contact = {
     "city": "Barcelona ES, 08003",
     "email": "pawlik.gregor@gmail.com",
-    "Resume": "grzegorz-pawlik-resume-2015.pdf",
-    "LinkedIn": "http://www.linkedin.com/in/pawlikgrzegorz",
-    //"CodePen": "http://codepen.io/grzegorzpawlik/",
+    "Resume": "files/grzegorz-pawlik-resume-2015.pdf",
+    "LinkedIn": "http://www.linkedin.com/in/pawlikgrzegorz",    
     "Github": "https://github.com/gpawlik",
-    "StackOverflow": "http://stackoverflow.com/users/1359848/grzegorz-pawlik"
-    //"Coderbits": "https://coderbits.com/gpawlik"
+    "StackOverflow": "http://stackoverflow.com/users/1359848/grzegorz-pawlik"    
 };
 
 GRZEGORZPAWLIK.Developer.Seed.projects = {
@@ -34,8 +32,8 @@ GRZEGORZPAWLIK.Developer.Seed.projects = {
 };
 
 GRZEGORZPAWLIK.Developer.Seed.tech = {
-    "HTML/CSS/JavaScript": ["Grunt", "Compass", "Sass & Less", "jQuery", "Templates: Mustache, Handlebars, Jade", "Responsive design", "Social media integration", "AngularJS", "Bootstrap"],
-    "PHP": ["WordPress", "CodeIgniter", "Drupal", "Joomla", "Zend", "Laravel"]
+    "HTML/CSS/JavaScript": ["Sass & Less", "Compass", "jQuery", "AngularJS", "Templates: Mustache, Handlebars", "Grunt", "Responsive design", "Facebook/Twitter/Youtube API", "Bootstrap"],
+    "PHP": ["WordPress", "CodeIgniter", "Drupal", "Joomla", "Zend", "Laravel", "PHPUnit"]
 };
 
 GRZEGORZPAWLIK.Developer.Seed.refs = {
@@ -255,7 +253,7 @@ GRZEGORZPAWLIK.Developer.Resume = function(seed) {
 
         _addList: function(collection) {
             var item, str = '';
-            if (collection) collection.sort();
+            //if (collection) collection.sort();
             str += '<ul class="gp-list">';
             for (item in collection) {
                 str += '<li>' + collection[item] + '</li>';
