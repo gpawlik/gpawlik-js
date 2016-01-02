@@ -11,14 +11,15 @@ GRZEGORZPAWLIK.Developer.Seed.titles = {
 GRZEGORZPAWLIK.Developer.Seed.contact = {
     "city": "Barcelona ES, 08003",
     "email": "pawlik.gregor@gmail.com",
-    "Resume": "files/grzegorz-pawlik-resume-2015.pdf",
+    "Resume": "files/grzegorz-pawlik-resume-2016.pdf",
     "LinkedIn": "http://www.linkedin.com/in/pawlikgrzegorz",    
     "Github": "https://github.com/gpawlik",
     "StackOverflow": "http://stackoverflow.com/users/1359848/grzegorz-pawlik"    
 };
 
 GRZEGORZPAWLIK.Developer.Seed.projects = {
-    "recentProjects": {        
+    "recentProjects": {   
+        "TripPlanner (Travel Web Application)": "http://tripplanner.gpawlik.com",
         "Wilson (Management Platform for FB Apps)": "http://showcase.gpawlik.com/project/wilson",
         "Domingo (Travel Inspiration Site)": "http://letsdomingo.com",
         "eDreams Prize Alerts (FB App)": "https://www.facebook.com/eDreams/app_846536198741959",
@@ -32,19 +33,23 @@ GRZEGORZPAWLIK.Developer.Seed.projects = {
 };
 
 GRZEGORZPAWLIK.Developer.Seed.tech = {
-    "HTML/CSS/JavaScript": ["Sass & Less", "Compass", "jQuery", "AngularJS", "Templates: Mustache, Handlebars", "Grunt", "Responsive design", "Facebook/Twitter/Youtube API", "Bootstrap"],
-    "PHP": ["WordPress", "CodeIgniter", "Drupal", "Joomla", "Zend", "Laravel", "PHPUnit"]
+    "HTML/CSS/JavaScript": ["Sass & LESS", "Compass", "jQuery", "AngularJS", "Templates: Mustache, Handlebars", "Grunt", "Responsive design", "Facebook/Twitter/Youtube API", "Bootstrap"],
+    "PHP": ["WordPress", "CodeIgniter", "Drupal", "Joomla", "Zend", "Laravel", "PHPUnit", "AdWords API"]
 };
 
 GRZEGORZPAWLIK.Developer.Seed.refs = {
     "professional": [{
+        "name": "Flavio Rodrigues",
+        "role": "Head of SEM",
+        "email": "flavio.rodrigues@odigeo.com "
+    }, {
         "name": "Bob Samii",
         "role": "Head of Marketing",
         "email": "bsamii@inmotionrealestate.com "
     }, {
-        "name": "Kim Nguyen",
+        "name": "Laura Tufari",
         "role": "Head of Social Media",
-        "email": "kim.nguyen@odigeo.com "
+        "email": "laura.tufari@odigeo.com "
     }, {
         "name": "Coen Smeekes",
         "role": "Founder",
@@ -72,7 +77,7 @@ GRZEGORZPAWLIK.Developer.Seed.edu = [{
 
 GRZEGORZPAWLIK.Developer.Seed.xp = {
     "professional": [{
-        "role": "Social Media App Developer",
+        "role": "Senior Marketing Developer",
         "company": "eDreams Odigeo",
         "description": "Front and backend development on the variety of projects within the Marketing department.",
         "date": "05/2012-now",
