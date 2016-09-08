@@ -13,8 +13,7 @@ GRZEGORZPAWLIK.Developer.Seed.contact = {
     "email": "pawlik.gregor@gmail.com",
     "Resume": "files/grzegorz-pawlik-resume-2016.pdf",
     "LinkedIn": "http://www.linkedin.com/in/pawlikgrzegorz",    
-    "Github": "https://github.com/gpawlik",
-    "StackOverflow": "http://stackoverflow.com/users/1359848/grzegorz-pawlik"    
+    "Github": "https://github.com/gpawlik"        
 };
 
 GRZEGORZPAWLIK.Developer.Seed.projects = {
@@ -77,10 +76,22 @@ GRZEGORZPAWLIK.Developer.Seed.edu = [{
 
 GRZEGORZPAWLIK.Developer.Seed.xp = {
     "professional": [{
-        "role": "Senior Marketing Developer",
+        "role": "JavaScript Developer",
+        "company": "eDreams Odigeo",
+        "description": "Being part of a frontend team of the Europe's leading online travel agency working on its core platform.",
+        "date": "11/2015-now",
+        "clients": ["eDreams", "Opodo", "GoVoyages", "Travellink", "Liligo"]
+    }, {
+        "role": "Senior Web Developer",
+        "company": "eDreams Odigeo",
+        "description": "Working on data-heavy projects for the capabilities team within the SEM department.",
+        "date": "06/2015-11/2015",
+        "clients": ["eDreams", "Opodo", "GoVoyages", "Travellink", "Liligo"]
+    }, {
+        "role": "Web Developer",
         "company": "eDreams Odigeo",
         "description": "Front and backend development on the variety of projects within the Marketing department.",
-        "date": "05/2012-now",
+        "date": "05/2012-06/2015",
         "clients": ["eDreams", "Opodo", "GoVoyages", "Travellink", "Liligo"]
     }, {
         "role": "Full-Stack Developer",
@@ -89,24 +100,18 @@ GRZEGORZPAWLIK.Developer.Seed.xp = {
         "date": "07/2011-05/2012",
         "clients": ["Mainly small and medium dutch-based companies"]
     }, {
-        "role": "Full-Stack Developer",
+        "role": "Web Developer",
         "company": "Internet Advantage",
         "description": "Development and optimization of clients sites and marketing campaigns.",
         "date": "01/2011-08/2011",
         "clients": ["TECS", "PsychCorp", "ADT", "Turismo Madrid", "Bayer"]
-    }, {
-        "role": "Back-End Developer",
-        "company": "Web Koncept Studio",
-        "description": "Support with web development and debugging, email marketing campaigns development.",
-        "date": "09/2008-11/2009"
     }]
 };
 
 GRZEGORZPAWLIK.Developer.Resume = function(seed) {
 
     if (!seed) {
-        throw ("Seed doesn't exist");
-        return;
+        throw ("Seed doesn't exist");        
     }
 
     var _seed = seed,
