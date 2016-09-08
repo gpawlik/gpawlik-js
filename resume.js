@@ -13,7 +13,7 @@ GRZEGORZPAWLIK.Developer.Seed.contact = {
     "email": "pawlik.gregor@gmail.com",
     "Resume": "files/grzegorz-pawlik-resume-2016.pdf",
     "LinkedIn": "http://www.linkedin.com/in/pawlikgrzegorz",    
-    "Github": "https://github.com/gpawlik"        
+    "GitHub": "https://github.com/gpawlik"        
 };
 
 GRZEGORZPAWLIK.Developer.Seed.projects = {
@@ -32,8 +32,9 @@ GRZEGORZPAWLIK.Developer.Seed.projects = {
 };
 
 GRZEGORZPAWLIK.Developer.Seed.tech = {
-    "HTML/CSS/JavaScript": ["Sass & LESS", "Compass", "jQuery", "AngularJS", "Templates: Mustache, Handlebars", "Grunt", "Responsive design", "Facebook/Twitter/Youtube API", "Bootstrap"],
-    "PHP": ["WordPress", "CodeIgniter", "Drupal", "Joomla", "Zend", "Laravel", "PHPUnit", "AdWords API"]
+    "Frontend": ["Angular", "Backbone", "jQuery", "Node.js", "Jasmine/Chai/Karma", "Cucumber/Gherkin", "Sass & LESS", "Compass", "Templates: Mustache, Handlebars", "Grunt", "Gulp", "Bootstrap"],
+    "Backend": ["WordPress", "CodeIgniter", "Drupal", "Joomla", "Zend", "Laravel", "PHPUnit", "AdWords API"],
+    "Tools": ["Netbeans", "IntellijIDEA", "Jira/Confluence", "TortoiseHG", "MySQL Workbench", "SwiftKanban", "Trello", "Photoshop"]
 };
 
 GRZEGORZPAWLIK.Developer.Seed.refs = {
