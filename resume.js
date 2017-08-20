@@ -9,32 +9,33 @@ GRZEGORZPAWLIK.Developer.Seed.titles = {
 };
 
 GRZEGORZPAWLIK.Developer.Seed.contact = {
-    "city": "Barcelona ES, 08003",
+    "city": "Porto PT, 4050",
     "email": "pawlik.gregor@gmail.com",
-    "Resume": "files/grzegorz-pawlik-resume-2016.pdf",
-    "LinkedIn": "http://www.linkedin.com/in/pawlikgrzegorz",    
-    "GitHub": "https://github.com/gpawlik"        
+    "Resume": "files/grzegorz-pawlik-resume-2017.pdf",
+    "LinkedIn": "http://www.linkedin.com/in/pawlikgrzegorz",
+    "GitHub": "https://github.com/gpawlik"
 };
 
 GRZEGORZPAWLIK.Developer.Seed.projects = {
-    "recentProjects": {   
+    "recentProjects": {
+        "Time Tracker (React Native App)": "https://github.com/gpawlik/time-tracker",
         "TripPlanner (Travel Web Application)": "http://tripplanner.gpawlik.com",
+        "Keller (JS Library)": "https://github.com/gpawlik/keller-lib",
+        "BookFinder (React Native App)": "https://github.com/gpawlik/booksApp",
         "Wilson (Management Platform for FB Apps)": "http://showcase.gpawlik.com/project/wilson",
         "Domingo (Travel Inspiration Site)": "http://letsdomingo.com",
-        "eDreams Prize Alerts (FB App)": "https://www.facebook.com/eDreams/app_846536198741959",
         "eDreams Blog (Template redesign)": "http://blog.edreams.com",
         "eDreams Hotels Landing Pages (Template redesign)" : "http://www.edreams.es/engine/campaigns/dynpack/?cityName=paris-test",
-        "Follow Travel (Twitter contest)" : "http://blog.edreams.es/follow-travel/",                
-        "Dear Christmas (FB App)": "http://apps-odigeo.com/apps/dearchristmas/",        
+        "Dear Christmas (FB App)": "http://apps-odigeo.com/apps/dearchristmas/",
         "Dont Pay Me (Personal)": "http://dontpayme.com",
-        "* GIFs are forever (Images)": "http://showcase.gpawlik.com/project/gifs-are-forever/"      
+        "* GIFs are forever (Images)": "http://showcase.gpawlik.com/project/gifs-are-forever/"
     }
 };
 
 GRZEGORZPAWLIK.Developer.Seed.tech = {
-    "Frontend": ["Angular", "Backbone", "jQuery", "Node.js", "Jasmine/Chai/Karma", "Cucumber/Gherkin", "Sass & LESS", "Compass", "Templates: Mustache, Handlebars", "Grunt", "Gulp", "Bootstrap"],
+    "Frontend": ["React", "React Native", "Angular", "Backbone", "Vue", "Node.js", "Express/Hapi", "Jasmine/Chai/Karma", "Cucumber/Gherkin", "Sass & LESS, Compass", "Mustache/Handlebars", "Webpack/Grunt/Gulp", "Bootstrap"],
     "Backend": ["WordPress", "CodeIgniter", "Drupal", "Joomla", "Zend", "Laravel", "PHPUnit", "AdWords API"],
-    "Tools": ["Netbeans", "IntellijIDEA", "Jira/Confluence", "TortoiseHG", "MySQL Workbench", "SwiftKanban", "Trello", "Photoshop"]
+    "Tools": ["Atom", "Netbeans", "IntellijIDEA", "Jira/Confluence", "SwiftKanban", "Trello", "Photoshop"]
 };
 
 GRZEGORZPAWLIK.Developer.Seed.refs = {
@@ -70,7 +71,7 @@ GRZEGORZPAWLIK.Developer.Seed.edu = [{
     "major": "Telecommunication Engineering",
     "class": "2004"
 }, {
-    "school": "Universidad Miguel Hernández de Elche",    
+    "school": "Universidad Miguel Hernández de Elche",
     "major": "Informatics and Telecommunications",
     "class": "2007"
 }];
@@ -78,9 +79,21 @@ GRZEGORZPAWLIK.Developer.Seed.edu = [{
 GRZEGORZPAWLIK.Developer.Seed.xp = {
     "professional": [{
         "role": "JavaScript Developer",
+        "company": "NearForm",
+        "description": "Being part of the external Condé Nast International team responsible for the migration of Vogue magazine.",
+        "date": "06/2017-now",
+        "clients": ["NearForm", "Condé Nast International"]
+    }, {
+        "role": "JavaScript Developer",
+        "company": "CornerJob",
+        "description": "React and Node development in one of the leading European startups in the field of blue-collar jobs recruitment",
+        "date": "10/2016-06/2017",
+        "clients": ["CornerJob", "Yves Rocher", "Randstad"]
+    }, {
+        "role": "JavaScript Developer",
         "company": "eDreams Odigeo",
         "description": "Being part of a frontend team of the Europe's leading online travel agency working on its core platform.",
-        "date": "11/2015-now",
+        "date": "11/2015-10/2016",
         "clients": ["eDreams", "Opodo", "GoVoyages", "Travellink", "Liligo"]
     }, {
         "role": "Senior Web Developer",
@@ -112,7 +125,7 @@ GRZEGORZPAWLIK.Developer.Seed.xp = {
 GRZEGORZPAWLIK.Developer.Resume = function(seed) {
 
     if (!seed) {
-        throw ("Seed doesn't exist");        
+        throw ("Seed doesn't exist");
     }
 
     var _seed = seed,
@@ -228,7 +241,7 @@ GRZEGORZPAWLIK.Developer.Resume = function(seed) {
                 item, str = '';
 
             str += '<div class="gp-module gp-education">';
-            str += this._createTitle('Education');            
+            str += this._createTitle('Education');
             str += '<ul class="gp-list">';
             for (i = 0; i < eduLen; i++) {
                 str += '<li>';
@@ -237,7 +250,7 @@ GRZEGORZPAWLIK.Developer.Resume = function(seed) {
                 }
                 str += '</li>';
             }
-            str += '</ul>';                        
+            str += '</ul>';
             str += '</div>';
 
             document.body.innerHTML += str;
